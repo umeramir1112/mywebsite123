@@ -19,10 +19,6 @@
       text-decoration: none;
     }
 
-    form {
-      margin-top: 20px;
-    }
-
     input, textarea {
       width: 200px;
       padding: 10px;
@@ -30,14 +26,13 @@
     }
 
     button {
-      padding: 10px 20px;
+      padding: 10px;
     }
   </style>
 </head>
 
 <body>
 
-<!-- Navbar -->
 <div class="navbar">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
@@ -54,8 +49,8 @@
 </form>
 
 <script>
-document.querySelector("form").addEventListener("submit", function(event) {
-  event.preventDefault();
+document.querySelector("form").addEventListener("submit", function(e) {
+  e.preventDefault();
   alert("Message sent successfully 😄");
 });
 </script>
