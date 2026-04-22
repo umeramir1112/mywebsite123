@@ -2,11 +2,14 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       background-color: lightblue;
       text-align: center;
       font-family: Arial;
+      margin: 0;
     }
 
     .navbar {
@@ -18,11 +21,22 @@
       color: white;
       margin: 10px;
       text-decoration: none;
+      font-size: 18px;
+    }
+
+    h1 {
+      color: red;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 18px;
     }
 
     .container {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     .box {
@@ -30,23 +44,38 @@
       padding: 20px;
       margin: 10px;
       border-radius: 10px;
-      width: 150px;
+      width: 200px;
+      box-shadow: 0px 0px 10px gray;
+    }
+
+    img {
+      margin-top: 10px;
+      border-radius: 50%;
     }
   </style>
 </head>
 
 <body>
 
+<!-- Navbar -->
 <div class="navbar">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
 </div>
 
-<h1>Umer fareed Amir</h1>
+<!-- Main Content -->
+<h1>Umer Fareed Amir</h1>
 <p>I am a Web Developer</p>
+<p>I create simple and clean websites.</p>
 
+<img src="https://via.placeholder.com/150" width="150">
+
+<br><br>
+
+<!-- Boxes -->
 <div class="container">
+
   <div class="box">
     <h2>Project</h2>
     <p>My first website</p>
@@ -54,8 +83,9 @@
 
   <div class="box">
     <h2>Goal</h2>
-    <p>Become a developer</p>
+    <p>Become a professional developer</p>
   </div>
+
 </div>
 
 </body>
