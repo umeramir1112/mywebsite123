@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+    }
+
+    .navbar {
+      background-color: black;
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      width: 200px;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<h1>Contact Me</h1>
+
+<form>
+  <input type="text" placeholder="Your Name"><br>
+  <input type="email" placeholder="Your Email"><br>
+  <textarea placeholder="Your Message"></textarea><br>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+document.querySelector("form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  alert("Message sent successfully 😄");
+});
+</script>
+
+</body>
+</html>
